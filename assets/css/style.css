@@ -1,0 +1,109 @@
+::selection {
+	background: #282D4E;
+	color: #F3F9FF;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	background: url("/assets/img/bg.png"), #CBD2E5;
+	font-family: "Helvetica", sans-serif;
+}
+
+#container {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+div.row:not(:last-of-type) {
+	margin-bottom: 2em;
+}
+
+.card {
+	animation: grow .8s ease forwards;
+	background: #F3F9FF;
+	box-shadow: 10px 10px #282D4E;
+	color: #282D4E;
+	font-size: 2em;
+	padding: 1em;
+	transform: scale(0);
+	line-height: 1em;
+}
+
+.card-link {
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.card-link:hover {
+	background: #FFE2DA;
+}
+
+.card-link:active {
+	box-shadow: 5px 5px #282D4E;
+	transform: translate(5px, 5px);
+}
+
+span.card:not(:last-of-type),
+a.card-link:not(:last-of-type) {
+	margin-right: .5em;
+}
+
+#narpole {
+	bottom: 0;
+	height: 800px;
+	right: 50%;
+	overflow: hidden;
+	position: fixed;
+	transform-origin: bottom;
+	transform: translate(-50%) scale(0.5);
+	z-index: -9999;
+}
+
+#narpole>img {
+	animation: 2s float ease-in-out infinite alternate;
+}
+
+footer {
+	bottom: 0;
+	color: #282D4E;
+	font-size: 20px;
+	left: 50%;
+	margin-bottom: 50px;
+	position: absolute;
+	transform: translate(-50%);
+}
+
+@keyframes grow {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
+.grow-finished {
+	animation: none;
+	transform: scale(1);
+}
+
+@keyframes float {
+	from {
+		transform: translateY(3%);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
+}
