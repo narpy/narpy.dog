@@ -61,7 +61,7 @@ a.card-link:not(:last-of-type) {
 #narpole {
 	bottom: 0;
 	height: 800px;
-	left: 20%;
+	left: 15%;
 	overflow: hidden;
 	position: fixed;
 	transform-origin: bottom;
