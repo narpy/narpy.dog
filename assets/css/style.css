@@ -1,6 +1,6 @@
 ::selection {
-	background: #282D4E;
-	color: #F3F9FF;
+	background: #838699;
+	color: #fdfdfd;
 }
 
 * {
@@ -8,7 +8,7 @@
 }
 
 body {
-	background: url("/assets/img/bg.png"), #CBD2E5;
+	background: url("/assets/img/bg.png"), #ECE7EB;
 	font-family: "Helvetica", sans-serif;
 }
 
@@ -30,9 +30,9 @@ div.row:not(:last-of-type) {
 
 .card {
 	animation: grow .8s ease forwards;
-	background: #F3F9FF;
-	box-shadow: 10px 10px #282D4E;
-	color: #282D4E;
+	background: #fdfdfd;
+	box-shadow: 10px 10px #666064;
+	color: #666064;
 	font-size: 2em;
 	padding: 1em;
 	transform: scale(0);
@@ -49,7 +49,7 @@ div.row:not(:last-of-type) {
 }
 
 .card-link:active {
-	box-shadow: 5px 5px #282D4E;
+	box-shadow: 5px 5px #666064;
 	transform: translate(5px, 5px);
 }
 
